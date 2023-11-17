@@ -85,7 +85,18 @@ const createWishlistTable = async () => {
 
         CREATE TABLE IF NOT EXISTS wishlist (
             user_id int,
-            movie_id int
+            movie_id int,
+            title varchar(500) NOT NULL,
+            description text NOT NULL,
+            tag varchar(100) NOT NULL,
+            actors text NOT NULL,
+            director varchar(100),
+            publish_date date,
+            img_url text NOT NULL,
+            trailer_url text NOT NULL,
+            FOREIGN KEY (movie_id) REFERENCES movies(movie_id) 
+                ON UPDATE CASCADE
+                ON DELETE CASCADE
         );
     `
 
