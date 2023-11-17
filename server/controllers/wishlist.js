@@ -2,9 +2,9 @@ import { pool } from '../config/database.js'
 
 const createWishlistMovie = async (req, res) => {
     try {
-        const { user_id, movie_id } = req.body
-        const results = await pool.query("INSERT INTO wishlist (user_id, movie_id) VALUES($1, $2) RETURNING *",
-        [user_id, movie_id])
+        const { user_id, movie_id, title, description, tag, actors, director, publish_date, img_url, trailer_url } = req.body
+        const results = await pool.query("INSERT INTO wishlist (user_id, movie_id, title, description, tag, actors, director, publish_date, img_url, trailer_url) VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *",
+        [user_id, movie_id, title, description, tag, actors, director, publish_date, img_url, trailer_url])
     
         res.status(201).json(results.rows[0])
     } catch (error) {
