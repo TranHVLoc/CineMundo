@@ -20,12 +20,12 @@ const app = express();
 // Add the express middleware to parse JSON data from HTTP request
 app.use(express.json());
 // Add the cors middleware to enable CROSS ORIGIN
-// app.use(cors());
-app.use(cors({
-    origin: 'http://cinemundo-production-04e9.up.railway.app:5173',
-    methods: 'GET,POST,PUT,DELETE,PATCH',
-    credentials: false
-}))
+app.use(cors());
+// app.use(cors({
+//     origin: 'http://cinemundo-production-04e9.up.railway.app:5173',
+//     methods: 'GET,POST,PUT,DELETE,PATCH',
+//     credentials: false
+// }))
 
 // Use the API endpoint
 app.use('/api/movies', moviesRoutes);
