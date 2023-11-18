@@ -20,7 +20,12 @@ const app = express();
 // Add the express middleware to parse JSON data from HTTP request
 app.use(express.json());
 // Add the cors middleware to enable CROSS ORIGIN
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+    origin: 'http://localhost:5173',
+    methods: 'GET,POST,PUT,DELETE,PATCH',
+    credentials: false
+}))
 
 // Use the API endpoint
 app.use('/api/movies', moviesRoutes);
@@ -40,9 +45,9 @@ app.get('/', (req, res) => {
  * Determine environment and configure accordingly to produce/deploy the app
  */
 if (process.env.NODE_ENV === 'development') {
-    app.use(favicon(path.resolve('../', 'client', 'public', 'cine.jpg')));
+    app.use(favicon(path.resolve('../', 'client', 'public', 'cine.jpeg')));
 } else if (process.env.NODE_ENV === 'production') {
-    app.use(favicon(path.resolve('public', 'cine.jpg')));
+    app.use(favicon(path.resolve('public', 'cine.jpeg')));
     app.use(express.static('public'));
 }
 
