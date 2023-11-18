@@ -22,7 +22,7 @@ app.use(express.json());
 // Add the cors middleware to enable CROSS ORIGIN
 // app.use(cors());
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'http://cinemundo-production-04e9.up.railway.app:5173',
     methods: 'GET,POST,PUT,DELETE,PATCH',
     credentials: false
 }))
