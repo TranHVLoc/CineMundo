@@ -36,25 +36,30 @@ Backend: Node.js, Express.js, and PostgreSQL
 
 ✅ User can see a list of available movies on the app and further view movie detail in a popped up modal by clicking on any movie.
 
-<img src='https://i.imgur.com/TvdcSuF.gif' title='Read Movies' width='800' alt='Video Walkthrough' />
+<!-- <img src='https://i.imgur.com/TvdcSuF.gif' title='Read Movies' width='800' alt='Video Walkthrough' /> -->
+<img src='https://github.com/TranHVLoc/CineMundo/blob/main/walkthrough_gifs/movie_list.gif' title='Movie List' width='800' alt='Video Walkthrough' />
 
 ### Create profile for a new movie
 
 ✅ User can create a profile for a new movie, adding movie details such as name, director, actors, etc. through user input fields.
 
-<img src='https://i.imgur.com/jGLztqV.gif' title='Create Movie' width='800' alt='Video Walkthrough' />
+<!-- <img src='https://i.imgur.com/jGLztqV.gif' title='Create Movie' width='800' alt='Video Walkthrough' /> -->
+<img src='https://github.com/TranHVLoc/CineMundo/blob/main/walkthrough_gifs/add_movie_profile.gif' title='Add Movie Profile' width='800' alt='Video Walkthrough' />
 
 ### Edit movie data
 
 ✅ User can edit movie data fields for each movie.
 
-<img src='https://i.imgur.com/AXtEAkD.gif' title='Edit Movie' width='800' alt='Video Walkthrough' />
+<!-- <img src='https://i.imgur.com/AXtEAkD.gif' title='Edit Movie' width='800' alt='Video Walkthrough' /> -->
+<img src='https://github.com/TranHVLoc/CineMundo/blob/main/walkthrough_gifs/edit_movie.gif' title='Edit Movie' width='800' alt='Video Walkthrough' />
+
 
 ### Delete a movie
 
 ✅ User can delete a movie from the movie dashboard.
 
-<img src='https://i.imgur.com/e5CG7le.gif' title='Delete Movie' width='800' alt='Video Walkthrough' />
+<!-- <img src='https://i.imgur.com/e5CG7le.gif' title='Delete Movie' width='800' alt='Video Walkthrough' /> -->
+<img src='https://github.com/TranHVLoc/CineMundo/blob/main/walkthrough_gifs/delete_movie.gif' title='Delete Movie' width='800' alt='Video Walkthrough' />
 
 ### Toogle movie view
 
