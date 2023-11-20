@@ -105,6 +105,7 @@ const Modal = ({ setMovies, movies, movie, onClose, isWishList }) => {
           </div>
 
         </div>
+
         <div className="modal-footer">
           <div className="youtube-container">
             <AiFillYoutube className="youtube-icon" />
@@ -138,8 +139,10 @@ const Modal = ({ setMovies, movies, movie, onClose, isWishList }) => {
                   <AiOutlinePlus className="wishlist-icon not-added" onClick={() => addToWishlist(movie.movie_id)} title="Add to wishlist" />
                 )}
               </div>
-            )}
+            )
+          }
         </div>
+        
       </div>
     </div>
   );
