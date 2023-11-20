@@ -1,22 +1,66 @@
-.carousel-container {
-    display: flex;
-    overflow-x: auto;
-    padding: 20px;
-    scroll-snap-type: x mandatory;
-}
-
-.carousel-card-wrapper {
-    flex: 0 0 auto;
-    width: 20%; /* Width of each card */
+/* Carousel.css */
+.ViewWishlist {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
     position: relative;
-    scroll-snap-align: center;
-    margin-right: 10px;
 }
 
-.carousel-card-wrapper:first-child {
-    margin-left: calc((100% - 20%) / 2); /* Center the first card */
+.carousel-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Background color for the carousel */
+    border-radius: 20px; /* Rounded corners for the carousel */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for depth */
 }
 
-.carousel-card-wrapper:last-child {
-    margin-right: calc((100% - 20%) / 2); /* Center the last card */
+.carousel .slide {
+    background: transparent;
+    border: none;
 }
+
+.carousel .carousel-item {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.carousel .carousel-item:hover {
+    transform: scale(1.03); /* Slight zoom on hover for interactive feel */
+}
+
+.carousel .carousel-item img {
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px; /* Rounded corners on the left side */
+}
+
+.carousel .carousel-item > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-item-details {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff; /* Background color for the text container */
+    border-radius: 0 10px 10px 0; /* Rounded corners on the right side */
+}
+
+.carousel-item-details h3 {
+    margin-bottom: 10px;
+    color: #333; /* Title color */
+    font-size: 1.5em; /* Title font size */
+}
+
+.carousel-item-details p {
+    margin-bottom: 10px;
+    color: #666; /* Paragraph text color */
+    line-height: 1.4; /* Line height for paragraph */
+}
+
+
