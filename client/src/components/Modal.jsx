@@ -104,9 +104,6 @@ const Modal = ({ setMovies, movies, movie, onClose, isWishList }) => {
             <span>Release Date: {movie.publish_date.split('T')[0]}</span>
           </div>
 
-        </div>
-
-        <div className="modal-footer">
           <div className="youtube-container">
             <AiFillYoutube className="youtube-icon" />
             <iframe
@@ -117,7 +114,10 @@ const Modal = ({ setMovies, movies, movie, onClose, isWishList }) => {
               title="Movie Trailer"
             ></iframe>
           </div>
+        </div>
 
+
+        <div className="modal-footer">
           <div className="modal-edit-link">
             <a href={`/edit/${movie.movie_id}`} className="edit-link">
               <FaEdit className="icon edit-icon" />

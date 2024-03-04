@@ -205,7 +205,8 @@
     font-size: 2rem; /* Adjust the size of the icon */
     position: absolute; /* Position the icon relative to the modal */
     right: 20px; /* Position from the right */
-    bottom: 20px; /* Position from the bottom */
+    bottom: 10px; /* Position from the bottom */
+    top: 850px; /* Reset the top position */
 }
 
 .wishlist-icon.not-added:hover {
